@@ -1,0 +1,89 @@
+:root {
+  --text: #000000;
+  --background: #ffffff;
+  --card: #F1BDD6;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box
+}
+
+.page {
+  height: 100%;
+}
+
+.page,
+.page-body {
+  min-width: 320px;
+}
+
+.page-body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Comfortaa', cursive;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--text);
+
+  background-color: var(--background);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  width: 290px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+
+  border-radius: 3px;
+  background-color: var(--card);
+}
+
+.text {
+  margin: 20px;
+
+  font-size: 120px;
+  line-height: 140px;
+  text-transform: uppercase;
+}
+
+.anim {
+  animation: opa 2s ease-in-out;
+}
+
+@keyframes opa {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.button {
+  display: inline-block;
+  position: absolute;
+  bottom: -55px;
+  padding: 10px 20px;
+
+  color: black;
+
+  border: none;
+  border-radius: 3px;
+  background-color: var(--card);
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
